@@ -2,7 +2,7 @@
 
 ## Tartar 
 
-** Railway Carrier Document Adaptation System **  
+**Railway Carrier Document Adaptation System**  
 
 Tartar is a VBA-based document transformation solution designed to standardize transportation settlement documents received from multiple railway carriers. 
 
@@ -17,21 +17,21 @@ Tartar automates the adaptation process by converting carrier-specific documents
 
 Transportation acts received from carriers are not submitted in a single agreed format. Each carrier may use: 
 
-Different field names 
+- Different field names 
 
-Different column structures 
+- Different column structures 
 
-Different numbers of fields 
+- Different numbers of fields 
 
-Carrier-specific calculations 
+- Carrier-specific calculations 
 
-Different document layouts 
+- Different document layouts 
 
-Unique business rules 
+- Unique business rules 
 
-As a result, manual preparation of documents for SAP loading is time-consuming and prone to errors. 
+- As a result, manual preparation of documents for SAP loading is time-consuming and prone to errors. 
 
-The organization required a solution capable of transforming documents from multiple carriers into a single standardized format while maintaining compliance with business requirements. 
+- The organization required a solution capable of transforming documents from multiple carriers into a single standardized format while maintaining compliance with business requirements. 
 
  
  
@@ -42,23 +42,23 @@ Tartar implements a configurable transformation framework based on carrier-speci
 
 For each carrier, a dedicated adaptation procedure is developed according to functional specifications provided by business users. These specifications define: 
 
-Source document structure 
+- Source document structure 
 
-Required business fields 
+- Required business fields 
 
-Field mapping rules 
+- Field mapping rules 
 
-Transformation logic 
+- Transformation logic 
 
-Calculation formulas 
+- Calculation formulas 
 
-Validation requirements 
+- Validation requirements 
 
-Output file structure 
+- Output file structure 
 
-Each carrier is assigned a unique creditor code used during processing and file generation. 
+- Each carrier is assigned a unique creditor code used during processing and file generation. 
 
-The system transforms source data into a normalized format that can be used directly by SAP data loading procedures. 
+- The system transforms source data into a normalized format that can be used directly by SAP data loading procedures. 
 
  
  
@@ -90,28 +90,28 @@ The system transforms source data into a normalized format that can be used dire
 
 ## Workflow 
 
-The user selects a carrier from the application interface. 
+- The user selects a carrier from the application interface. 
 
-The user uploads the transportation act received from the selected carrier in Excel format. 
+- The user uploads the transportation act received from the selected carrier in Excel format. 
 
-The system executes the carrier-specific transformation procedure. 
+- The system executes the carrier-specific transformation procedure. 
 
-Source fields are mapped and transformed according to the approved functional specification. 
+- Source fields are mapped and transformed according to the approved functional specification. 
 
-Required calculations and validations are performed. 
+- Required calculations and validations are performed. 
 
-A standardized output dataset is generated. 
+- A standardized output dataset is generated. 
 
-The user saves the resulting file. 
+- The user saves the resulting file. 
 
-The generated file is subsequently used by SAP upload processes. 
+- The generated file is subsequently used by SAP upload processes. 
 
-The output filename is automatically generated using: 
+- The output filename is automatically generated using: 
 
 <Creditor Code>_<Act Number>.xlsx 
  
 
-This naming convention ensures consistency, traceability, and easier processing of generated files. 
+- This naming convention ensures consistency, traceability, and easier processing of generated files. 
 
  
  
@@ -144,17 +144,17 @@ SAP Upload Process
 
 ## Technology Stack 
 
-Microsoft Excel 
+- Microsoft Excel 
 
-VBA (Visual Basic for Applications) 
+- VBA (Visual Basic for Applications) 
 
-VBA Class Modules 
+- VBA Class Modules 
 
-VBA UserForms 
+- VBA UserForms 
 
-Excel Automation 
+- Excel Automation 
 
-Data Transformation and Validation Logic 
+- Data Transformation and Validation Logic 
 
  
  
@@ -163,23 +163,23 @@ Data Transformation and Validation Logic
 
 The solution significantly improves operational efficiency by automating the standardization of carrier transportation documents. 
 
-Benefits 
+**Benefits** 
 
-Reduced manual document processing effort 
+- Reduced manual document processing effort 
 
-Faster preparation of data for SAP loading 
+- Faster preparation of data for SAP loading 
 
-Improved data quality and consistency 
+- Improved data quality and consistency 
 
-Reduced risk of user errors 
+- Reduced risk of user errors 
 
-Standardized processing across carriers 
+- Standardized processing across carriers 
 
-Easier onboarding of new carrier formats 
+- Easier onboarding of new carrier formats 
 
-Improved auditability and traceability 
+- Improved auditability and traceability 
 
-Increased reliability of downstream business processes 
+- Increased reliability of downstream business processes 
 
  
  
